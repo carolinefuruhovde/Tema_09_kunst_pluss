@@ -1,0 +1,689 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 400;
+    line-height: 180%;
+    background-color: white;
+    
+
+}
+
+.wrapper {
+    display:grid;
+    /* grid-template-columns: none; */
+    max-width: 100em;
+    margin: auto;
+    
+}
+
+
+nav {
+
+    position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    padding: 10px;
+    background-color: white;
+}
+
+
+.header {
+    display: flex;
+    justify-content: center;
+    float: left;
+    font-size: 30px;
+}
+
+li{
+   display: inline;
+   float: right;
+   margin-top: 8px;
+}
+
+a{ 
+    margin: 20px;
+    margin-left: 10%;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+
+}
+
+li :hover{
+    color: rgb(247, 148, 30);
+
+}
+
+.ul{
+    display: none;
+}
+
+#navbar {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: inline-block;
+    transition: top 1.0s;
+  }
+
+  /* mobil navbar */
+
+  .mobile-container {
+    max-width: 200px;
+    margin: auto;
+    height: 0px;
+    float: right;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    background-color:#ffffff;
+    position: inherit;
+  }
+  
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  .topnav a {
+    color: black;
+    padding: 2px 10px;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+  }
+  
+  .topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .active {
+    background-color: white;
+    color: white;
+  }
+
+  /* lage 2 menyer?? en mobil hamburger versjon, desktop orginal meny */
+ 
+  .tittel{
+    position: absolute;
+}
+
+.Ingen{
+    font-size: 48px;
+    margin: 16%;
+    padding-top: 40px;
+}
+.vei{
+  font-size: 48px;
+  margin-left: 120%;
+  padding-top: 80px;
+}
+.tilbake{
+  font-size: 48px;
+  margin-left: 225%;
+  padding-top: 70px;
+  color: rgb(212, 211, 211);
+  
+}
+
+img{
+    display: block;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  
+  
+}
+
+.img2{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.img3{
+    padding-left: 15%;
+    padding-right: 5%;
+    height: 500px;  
+}
+
+.img4{
+    padding-left: 5%;
+    padding-right: 5%;
+    
+}
+.img5{
+    padding-left: 5%;
+    padding-right: 5%;
+    
+}
+.img6{
+    padding-left: 5%;
+    padding-right: 5%;
+    
+}
+.img7{
+    padding-left: 5%;
+    padding-right: 5%;
+    
+}
+
+.bildetekst{
+    display: block;
+    margin-left: auto;
+    text-align: right;
+   padding: 10px;
+   padding-right: 5%;
+   font-weight: 400;
+   font-style: italic;
+   font-size: 16px;
+
+
+}
+.bildetekst1{
+    display: block;
+    margin-left: auto;
+    text-align: right;
+   padding: 8px;
+   padding-right: 9%;
+   font-weight: 400;
+   font-style: italic;
+   font-size: 16px;
+}
+.bildetekst2{
+    display: block;
+    margin-left: auto;
+    text-align: right;
+   padding: 8px;
+   padding-right: 17%;
+   font-weight: 400;
+   font-style: italic;
+   font-size: 16px;
+}
+.bildetekst3{
+    display: block;
+    margin-left: auto;
+    text-align: right;
+   padding: 8px;
+   padding-right: 5%;
+   font-weight: 400;
+   font-style: italic;
+   font-size: 16px;
+}
+.bildetekst4{
+    display: block;
+    margin-left: auto;
+    text-align: right;
+   padding: 8px;
+   padding-right: 9%;
+   font-weight: 400;
+   font-style: italic;
+   font-size: 16px;
+
+}.bildetekst5{
+    display: block;
+    margin-left: auto;
+    text-align: right;
+   padding: 8px;
+   padding-right: 8%;
+   font-weight: 400;
+   font-style: italic;
+   font-size: 16px;
+}
+
+.bildetekst6{
+    display: block;
+    margin-left: auto;
+    text-align: right;
+   padding: 8px;
+   padding-right: 4%;
+   font-weight: 400;
+   font-style: italic;
+   font-size: 16px;
+}
+
+
+.heroimage{
+    padding-top: 64px;
+    padding-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
+}
+
+
+h3{
+    font-size: 16px;
+    justify-content: center;
+    margin: 8%;
+}
+
+/* h4{
+    font-size: 18px;
+    padding: 24px;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+   
+} */
+h4{
+    display: none;
+}
+
+h5{
+    font-size: 16px;
+    font-weight: 400;
+    justify-content: center;
+    width: 90%;
+    margin-left: 8%;
+}
+
+blockquote{
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 900;
+    line-height: 160%;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+p{
+    padding: 16px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.top_tekst{
+    padding-top: 0%;
+    
+}
+
+.intervju{
+    font-style: italic;
+    font-weight: 800;
+}
+
+.svar{
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+
+
+
+.button{
+   
+    font-family: inherit;
+    font-size: 18px;
+    min-width: 200px;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 2;
+    padding-top: 48px;
+    padding-bottom: 80px;
+    cursor: pointer;
+   
+
+}
+
+.button > p{
+    margin: 8px;
+}
+
+.arrow_button{
+    height: 48px;
+    
+
+         
+}
+
+
+/* media width voiew 800px ++++ */
+
+@media (min-width:600px){
+
+    .mobile-container{
+       display: none;
+
+    }
+
+    .ul{
+        display: block;
+    }
+
+    .tittel{
+        position: absolute;
+    }
+
+    .heroimage{
+        padding-top: 100px;
+        padding-bottom: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 90%;
+    }
+  
+    .Ingen{
+        font-size: 96px;
+        margin: 72px;
+    }
+    .vei{
+      font-size: 96px;
+      margin-left: 650px;
+      padding-top: 300px;
+  }
+  .tilbake{
+      font-size: 96px;
+      margin-left: 1100px;
+      padding-top: 0px;
+      color: rgb(212, 211, 211);
+      
+  }
+
+    .box1 {
+        /* background-color: orchid; */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-top: 10%;
+        padding-bottom: 0%;
+    }
+    
+    .box2 {
+        /* background-color: palegreen; */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .box3 {
+        /* background-color: rgb(145, 138, 241); */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        /* hvorfor legger den seg ikke helt til venstre så den har samme margin som teksten over? */
+        
+    }
+    
+     .box4 {
+        /* background-color: peachpuff; */
+        display: grid;
+        grid-template-rows: 1fr;
+    }
+    
+    .box5 {
+        /* background-color: peru; */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .box6 {
+        /* background-color: rgb(63, 205, 134); */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .box7 {
+        /* background-color: rgb(174, 99, 236); */
+        display: grid;
+        grid-template-rows: 1fr;
+        cursor: pointer;
+        
+        
+    }
+
+    .img2{
+        padding-left: 65px;
+        padding-right: 65px; 
+    }
+    
+    .img3{
+        padding-left: 65px;
+        padding-right: 65px;
+        height: 800px;
+    }
+    
+    .img4{
+        padding-left: 65px;
+        padding-right: 65px;
+        
+    }
+    .img5{
+        padding-left: 65px;
+        padding-right: 65px;
+        
+    }
+    .img6{
+        padding-left: 65px;
+        padding-right: 65px;
+        
+    }
+    .img7{
+        padding-left: 65px;
+        padding-right: 65px;
+        
+    }
+
+    .img_container{
+        /* position:relative; */
+        display: inline-block;
+        line-height: 0;
+        
+    }
+ 
+     /* .img_container img:hover{
+        opacity: .7;
+    } */
+
+    /* .hoverbakgrunn{
+        position: absolute;
+        background-color: orange;
+        margin-top: 272px;
+        margin-left: 65px;
+        width: 1352px;
+        height: 900px;
+        z-index: -1;
+    } */
+    /* .hoverbakgrunn: :hover{
+        display:block;
+    } */
+
+
+    
+img{
+    display: block;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+
+
+
+.bildetekst{
+    display: block;
+    margin-left: auto;
+    text-align: right;
+   padding: 8px;
+   padding-right: 5%;
+   font-weight: 400;
+   font-style: italic;
+   font-size: 16px;
+}
+.bildetekst1{
+    display: block;
+    margin-left: auto;
+    text-align: right;
+   padding: 8px;
+   padding-right: 9%;
+   font-weight: 400;
+   font-style: italic;
+   font-size: 16px;
+}
+.bildetekst2{
+    display: block;
+    margin-left: auto;
+    text-align: right;
+   padding: 8px;
+   padding-right: 17%;
+   font-weight: 400;
+   font-style: italic;
+   font-size: 16px;
+}
+.bildetekst3{
+    display: block;
+    margin-left: auto;
+    text-align: right;
+   padding: 8px;
+   padding-right: 5%;
+   font-weight: 400;
+   font-style: italic;
+   font-size: 16px;
+}
+.bildetekst4{
+    display: block;
+    margin-left: auto;
+    text-align: right;
+   padding: 8px;
+   padding-right: 9%;
+   font-weight: 400;
+   font-style: italic;
+   font-size: 16px;
+
+}.bildetekst5{
+    display: block;
+    margin-left: auto;
+    text-align: right;
+   padding: 8px;
+   padding-right: 8%;
+   font-weight: 400;
+   font-style: italic;
+   font-size: 16px;
+}
+
+.bildetekst6{
+    display: block;
+    margin-left: auto;
+    text-align: right;
+   padding: 8px;
+   padding-right: 4%;
+   font-weight: 400;
+   font-style: italic;
+   font-size: 16px;
+}
+
+
+/* .heroimage{
+    padding-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 90%;
+} */
+
+
+h3{
+    font-size: 24px;
+    justify-content: center;
+    width: 90%;
+    margin:auto;
+    padding-top: 48px;
+    line-height: 180%;
+ 
+
+}
+
+h4{
+    display: block;
+    font-size: 32px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    line-height: 160%;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-weight: 500;
+    justify-content: center;
+}
+
+h5{
+    margin-left: 12%;
+}
+
+blockquote{
+    font-size: 32px;
+    font-weight: 700;
+    padding: 48px;
+}
+
+
+p{
+    padding: 16px;
+    margin-left: 10%;
+    margin-right: 32%;
+}
+
+.top_tekst{
+    padding-top: 0%;
+}
+.top_tekst2{
+    padding-top: 400px;
+}
+
+.intervju{
+    font-style: italic;
+    font-weight: 800;
+}
+
+.svar{
+    font-style: normal;
+    font-weight: 400;
+}
+
+.høyre_5{
+padding-top: 340px;
+}
+
+.button{
+   
+    font-family: inherit;
+    font-size: 24px;
+    width: 200px;
+    border: none;
+    float: right;
+    padding-top: 50px;
+    padding-bottom: 80px;
+    margin-right: 2%;
+    cursor: pointer;
+
+}
+
+/* .arrow_button{
+    height: 30px;
+    padding-left: 130px;
+     */
+    
+    
+}
+.button:hover{
+    text-decoration: underline;
+    color: rgb(247, 148, 30);
+}
