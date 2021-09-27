@@ -236,8 +236,9 @@ img{
    font-weight: 400;
    font-style: italic;
    font-size: 16px;
+}
 
-}.bildetekst5{
+.bildetekst5{
     display: block;
     margin-left: auto;
     text-align: right;
