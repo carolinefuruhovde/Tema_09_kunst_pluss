@@ -36,6 +36,11 @@ nav {
     background-color: white;
 }
 
+.herotekst {
+    font-size: 40px;
+   padding-top: 100px;
+   text-align: center;
+}
 
 .header {
     display: flex;
@@ -124,7 +129,7 @@ li :hover{
     position: absolute;
 }
 
-.Ingen{
+/* .Ingen{
     font-size: 48px;
     margin: 16%;
     padding-top: 40px;
@@ -140,7 +145,7 @@ li :hover{
   padding-top: 70px;
   color: rgb(212, 211, 211);
   
-}
+} */
 
 img{
     display: block;
@@ -262,8 +267,6 @@ img{
 
 
 .heroimage{
-    padding-top: 64px;
-    padding-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
     max-width: 90%;
@@ -380,15 +383,22 @@ p{
         position: absolute;
     }
 
+    .herotekst {
+        font-size: 100px;
+       padding-top: 120px;
+       padding-bottom: 20px;
+       text-align: center;
+    }
+
     .heroimage{
-        padding-top: 100px;
+        /* padding-top: 100px; */
         padding-bottom: 10px;
         margin-left: auto;
         margin-right: auto;
         max-width: 90%;
     }
   
-    .Ingen{
+    /* .Ingen{
         font-size: 96px;
         margin: 72px;
     }
@@ -403,7 +413,8 @@ p{
       padding-top: 0px;
       color: rgb(212, 211, 211);
       
-  }
+  } */
+
 
     .box1 {
         /* background-color: orchid; */
